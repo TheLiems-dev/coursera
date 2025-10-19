@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang 3 - Kết Thúc</title>
+    <style>
+        /* Liên kết skip: Ẩn trừ khi focus */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Điều hướng: Flex với 3 thuộc tính CSS */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 10px;
+            color: #333;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            padding: 5px 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
+        }
+
+        /* Hình ảnh: Mô hình hộp */
+        img {
+            border: 2px solid #ccc;
+            padding: 5px;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Nội dung chính */
+        main {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Chuyển tới Nội dung Chính</a>
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="page2.html">Trang 2</a>
+        <a href="page3.html">Trang 3</a>
+    </nav>
+    <main id="main-content">
+        <h1>Trang 3: Kết Thúc</h1>
+          <p>Đây là trang cuối cùng với một hình ảnh về đèo Mã Pí lèng của tỉnh Hà giang.</p>
+            <img src="https://yootek.vn/wp-content/uploads/2025/09/30.png" alt="Hình ảnh Mã Pí Lèng - đèo lên Hà giang">
+    </main>
+</body>
+</html>
